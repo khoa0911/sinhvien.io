@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ Sinh Viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .student-card {
+            width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-card::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: #007bff;
+            border-radius: 50%;
+        }
+
+        .student-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .student-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .student-card p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .barcode {
+            margin-top: 15px;
+            height: 30px;
+            background: linear-gradient(90deg, #000 10%, transparent 10%);
+            background-size: 10px 100%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="student-card">
+        <img src="https://scontent.fsgn5-1.fna.fbcdn.net/v/t39.30808-6/473275147_9001138269968082_2033813832564964703_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHLNtpJV7bBYAMkjxCKqtGCRLruPv8xJg1Euu4-_zEmDQ9Bzctkt-9reJzSCoSOutXY0LcWThYsfkstkQ1gdVNi&_nc_ohc=FrmOLN2X0iMQ7kNvgGst-XC&_nc_oc=Adlexgs8DI7dIMRn_RSXgLImwOl7FTTthgqT2oWleeEmu_xfcIS0ImdQ393tDm3S1kBTm8Q5RNEWJMn2QCOofXzO&_nc_zt=23&_nc_ht=scontent.fsgn5-1.fna&_nc_gid=nadckErbrZLMOBNwxj_O0w&oh=00_AYFaB4M_-xOCHKRugZnv1ybnTCgVHYoqzsdK1IrrWnpPAA&oe=67F12958" alt="Ảnh Sinh Viên">
+        <h2>Ngô Đức Anh</h2>
+        <p><strong>MSSV:</strong> 2180605463</p>
+        <p><strong>Lớp:</strong> CNTT-K121</p>
+        <p><strong>Trường:</strong> Đại học Hutech</p>
+        <div class="barcode"></div>
+    </div>
+</body>
+</html>
